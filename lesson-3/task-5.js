@@ -10,7 +10,7 @@ for (let i = 1; i <= 20; i++) {
  * @returns {string}
  */
 function getX(count) {
-    let result = "x";
+    let result = 'x';
 
     for (let i = 1; i < count; i++) {
         result = result + 'x';
