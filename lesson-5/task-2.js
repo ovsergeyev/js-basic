@@ -23,7 +23,7 @@ const cart = {
     getCost: function () {
         let cost = 0;
         for (let i = 0; i < this.elements.length; i++) {
-            cost += this.elements[i].price;
+            cost += this.elements[i].price * this.elements[i].count;
         }
         return cost;
     }
