@@ -5,65 +5,114 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Первое задание задание</title>
+    <title>Первое задание</title>
     <link rel="stylesheet" href="task-1.css">
 </head>
 <body>
-<div class="cart">
-    <a class="cart__link" href="shoping-cart.html">
-        <img class="cart__img" src="img/cart.svg" alt="cart">
-        <div class="cart__drop">
-            <div class="cart__item">
-                <img class="cart__product-img" src="img/photo-cart-1.jpg" alt="photo-cart">
-                <div class="cart__text">
-                    <h3 class="cart__title">REBOX ZANE</h3>
-                    <div class="cart__stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="cart__price">1
-                        <span class="cart__span">x</span>
-                        $250</p>
+<div id="cart" class="cart"></div>
+
+<!--Block product-box-->
+<section class="product-box container page__product-box">
+    <div class="product-box__inner">
+        <div class="product product-box__product">
+            <a class="product__link" href="#">
+                <div class="product__img-box">
+                    <img class="product__img" src="img/product1.jpg" alt="product">
                 </div>
-                <div class="cart__close">
-                    <i class="fas fa-times-circle pointer"></i>
+                <div class="product__text">
+                    <span class="product__name">Product 1</span>
+                    <span class="product__price">$48.00</span>
                 </div>
-            </div>
-            <div class="cart__item">
-                <img class="cart__product-img" src="img/photo-cart-2.jpg" alt="photo-cart">
-                <div class="cart__text">
-                    <h3 class="cart__title">REBOX ZANE</h3>
-                    <div class="cart__stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="cart__price">1
-                        <span class="cart__span">x</span>
-                        $250</p>
-                </div>
-                <div class="cart__close">
-                    <i class="fas fa-times-circle pointer"></i>
-                </div>
-            </div>
-            <div class="cart__total-amount">
-                <p class="cart__total">TOTAL</p>
-                <p class="cart__amount">$500.00</p>
-            </div>
-            <div class="cart__button">Checkout</div>
-            <div class="cart__button">Go to cart</div>
+                <span class="product__add">Add to Cart</span>
+            </a>
         </div>
-    </a>
-</div>
-
-<div id="cart" class="cart" style="margin-left: 400px; margin-top: -65px;">
-
-</div>
+        <div class="product product-box__product">
+            <a class="product__link" href="#">
+                <div class="product__img-box">
+                    <img class="product__img" src="img/product2.jpg" alt="product">
+                </div>
+                <div class="product__text">
+                    <span class="product__name">Product 2</span>
+                    <span class="product__price">$32.00</span>
+                </div>
+                <span class="product__add">Add to Cart</span>
+            </a>
+        </div>
+        <div class="product product-box__product">
+            <a class="product__link" href="#">
+                <div class="product__img-box">
+                    <img class="product__img" src="img/product3.jpg" alt="product">
+                </div>
+                <div class="product__text">
+                    <span class="product__name">Product 3</span>
+                    <span class="product__price">$62.00</span>
+                </div>
+                <span class="product__add">Add to Cart</span>
+            </a>
+        </div>
+        <div class="product product-box__product">
+            <a class="product__link" href="#">
+                <div class="product__img-box">
+                    <img class="product__img" src="img/product4.jpg" alt="product">
+                </div>
+                <div class="product__text">
+                    <span class="product__name">Product 4</span>
+                    <span class="product__price">$46.00</span>
+                </div>
+                <span class="product__add">Add to Cart</span>
+            </a>
+        </div>
+        <div class="product product-box__product">
+            <a class="product__link" href="#">
+                <div class="product__img-box">
+                    <img class="product__img" src="img/product5.jpg" alt="product">
+                </div>
+                <div class="product__text">
+                    <span class="product__name">Product 5</span>
+                    <span class="product__price">$52.00</span>
+                </div>
+                <span class="product__add">Add to Cart</span>
+            </a>
+        </div>
+        <div class="product product-box__product">
+            <a class="product__link" href="#">
+                <div class="product__img-box">
+                    <img class="product__img" src="img/product6.jpg" alt="product">
+                </div>
+                <div class="product__text">
+                    <span class="product__name">Product 6</span>
+                    <span class="product__price">$64.00</span>
+                </div>
+                <span class="product__add">Add to Cart</span>
+            </a>
+        </div>
+        <div class="product product-box__product">
+            <a class="product__link" href="#">
+                <div class="product__img-box">
+                    <img class="product__img" src="img/product7.jpg" alt="product">
+                </div>
+                <div class="product__text">
+                    <span class="product__name">Product 7</span>
+                    <span class="product__price">$38.00</span>
+                </div>
+                <span class="product__add">Add to Cart</span>
+            </a>
+        </div>
+        <div class="product product-box__product">
+            <a class="product__link" href="#">
+                <div class="product__img-box">
+                    <img class="product__img" src="img/product8.jpg" alt="product">
+                </div>
+                <div class="product__text">
+                    <span class="product__name">Product 8</span>
+                    <span class="product__price">$44.00</span>
+                </div>
+                <span class="product__add">Add to Cart</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!--End block product-box-->
 <script src="task-1.js"></script>
 </body>
 </html>
