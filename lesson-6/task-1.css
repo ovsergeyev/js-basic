@@ -1,0 +1,126 @@
+.cart {
+    position: relative;
+}
+
+.cart__link {
+    display: block;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 15px;
+    margin-top: 17px;
+}
+
+.cart__link:hover .cart__drop {
+    display: block;
+}
+
+.cart__drop {
+//display: none;
+    width: 262px;
+    border: 1px solid #ececec;
+    position: absolute;
+    left: -27px;
+    top: 45px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 17px 9px;
+    z-index: 1;
+}
+
+.cart__drop::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -5px;
+    left: 40px;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    background-color: white;
+}
+
+.cart__item {
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.cart__product-img {
+    float: left;
+}
+
+.cart__text {
+    float: left;
+    padding-top: 10px;
+    padding-left: 14px;
+}
+
+.cart__title {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cart__stars {
+    color: #e4af48;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.cart__price {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f16d7f;
+    word-spacing: 7px;
+}
+
+.cart__span {
+    font-size: 10px;
+}
+
+.cart__close {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #c0c0c0;
+    font-size: 16px;
+}
+
+.cart__total-amount {
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 17px 27px;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart__button {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 19px 0;
+    margin-bottom: 11px;
+}
+
+.cart__button:hover {
+    border: 1px solid #f16d7f;
+    color: #f16d7f;
+}
