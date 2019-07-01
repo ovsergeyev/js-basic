@@ -2,13 +2,6 @@
 
 const cart = {
     elements: [
-        {
-            id: 0,
-            name: 'Product 1',
-            price: 48,
-            img: 'img/product1.jpg',
-            count: 1,
-        },
     ],
 
     getCost: function () {
@@ -90,20 +83,23 @@ function indexOf(id) {
 }
 
 function handleRemoveClick(event) {
-    event.preventDefault();
+    console.log(event);
 
-    if (false) {
-        console.log('test');
-        const id = +event.target.dataset.id;
+    if (event.target.classList.contains('pointer')) {
+        const $close = event.target.parentElement;
+        const id = +$close.dataset.id;
         const idx = indexOf(id);
 
+        //console.log(cart.elements[idx]);
+        console.log(idx);
+
         if (cart.elements[idx].count > 1) {
-            cart[idx].count--;
+            cart.elements[idx].count--;
         } else {
             cart.elements.splice(idx, 1);
         }
 
-        countBasketPrice(cart);
+        countBascketPrice(cart);
     }
 
 }
@@ -135,7 +131,7 @@ function handleBuyClick(event) {
 function countBascketPrice(cart) {
     $cart.innerHTML = '';
     // Добавление элемента cartLink
-    const $cartLink = document.createElement('a');
+    const $cartLink = document.createElement('div');
     $cartLink.classList.add('cart__link');
     $cartLink.setAttribute('href', 'shoping-cart.html');
     $cart.appendChild($cartLink);
@@ -199,7 +195,7 @@ function countBascketPrice(cart) {
 
         $cartAmount.textContent = '$' + cart.getCost();
     } else {
-        $cart.textContent = 'Корзина пуста';
+        $cartAmount.textContent = 'Корзина пуста';
     }
 }
 
