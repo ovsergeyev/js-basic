@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Второе задание</title>
+</head>
+<body>
+<ol type="a">
+    <li>
+        Будет выведено undefined. Т.к. при инициализации переменная window.a будет объявлена.<br>
+        При интерпретации условие будет false и значение переменной не будет присвоено.<br>
+        <pre>
+                if​ (!(​ "a"​ ​ in​ ​ window​ )) {
+​                   var​ a = ​1;
+                }
+                alert(a);
+            </pre>
+    </li>
+    <li>
+        Переменная а не определена в глобальном контексте.<br>
+        Есть функция с таким именем. Но вызвать ее можно, только изнутри.<br>
+        <pre>
+                var b = function a(x) {
+                    x && a(--x);
+                };
+                alert(a);
+            </pre>
+    </li>
+    <li>
+        Возвращается функция. Т.к. код разбирается в 2 этапа (инициализация и интерпритация)<br>
+        При инициализации создаются переменные (var a). Переменная a = undefined<br>
+        При интерпритации объявление переменных игнорируется. Переменная a = функция.
+        <pre>
+                function a(x){
+                    return x * 2;
+                }
+                var a;
+                alert(a);
+            </pre>
+    </li>
+    <li>
+        Возвращается число 10. Т.к. аргумент функции переопределяется внутри функции.
+        <pre>
+                function b(x,y,a){
+                    arguments[2] = 10;
+                    alert(a);
+                }
+                b(1,2,3);
+            </pre>
+    </li>
+    <li>
+        This = window. В старом стандарте. И this = null в новом ("use strict").
+        <pre>
+                function a(){
+                    alert(this);
+                }
+                a.call(null);
+            </pre>
+    </li>
+</ol>
+</body>
+</html>

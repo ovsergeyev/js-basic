@@ -1,0 +1,241 @@
+a {
+    text-decoration: none;
+}
+
+.cart {
+    position: relative;
+    float: left;
+}
+
+.cart__link {
+    display: block;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 15px;
+    margin-top: 17px;
+}
+
+.cart__link:hover .cart__drop {
+    display: block;
+}
+
+.cart__drop {
+//display: none;
+    width: 262px;
+    border: 1px solid #ececec;
+    //position: absolute;
+    left: -27px;
+    top: 45px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 17px 9px;
+    z-index: 1;
+}
+
+.cart__item {
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.cart__product-img {
+    float: left;
+    width: 72px;
+    height: 85px;
+}
+
+.cart__text {
+    float: left;
+    padding-top: 10px;
+    padding-left: 14px;
+}
+
+.cart__title {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cart__stars {
+    color: #e4af48;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.cart__price {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f16d7f;
+    word-spacing: 7px;
+}
+
+.cart__span {
+    font-size: 10px;
+}
+
+.cart__close {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #c0c0c0;
+    font-size: 16px;
+}
+
+.cart__total-amount {
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 17px 27px;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart__button {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 19px 0;
+    margin-bottom: 11px;
+}
+
+.cart__button:hover {
+    border: 1px solid #f16d7f;
+    color: #f16d7f;
+}
+
+.product-box {
+    text-align: center;
+}
+
+.product-box__product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.product-box__title {
+    color: #222222;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+}
+
+.product-box__subtitle {
+    margin-top: 10px;
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+
+.product-box__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.product-box__button {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.product-box__button i {
+    position: relative;
+    top: 1px;
+}
+
+.product {
+    width: 260px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.product:hover .product__img-box {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+.product:hover .product__add {
+    display: block;
+}
+
+.product__text {
+    padding: 10px 15px 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__img-box {
+    background-color: #e9e9e9;
+    width: 260px;
+    height: 280px;
+    transition: -webkit-filter 0.3s;
+    transition: filter 0.3s;
+    transition: filter 0.3s, -webkit-filter 0.3s;
+}
+
+.product__img {
+    width: 260px;
+    height: 280px;
+}
+
+.product__name {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    text-align: left;
+}
+
+.product__price {
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+}
+
+.product__add {
+    display: none;
+    width: 123px;
+    height: 39px;
+    line-height: 39px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    position: absolute;
+    top: 98px;
+    left: 70px;
+    text-align: center;
+}
+
+.product__add:hover {
+    box-shadow: 0 0 5px #fff;
+}

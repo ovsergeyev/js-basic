@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="task-1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cart-item-template" style="display:none">
+        <div class="cart__item">
+            <img class="cart__product-img" alt="photo-cart">
+            <div class="cart__text">
+                <h3 class="cart__title"></h3>
+                <p class="cart__price"></p>
+            </div>
+            <div class="cart__close">
+                <i class="fas fa-times-circle pointer"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-item-template" style="display:none">
+        <div class="product product-box__product">
+            <a class="product__link" href="#">
+                <div class="product__img-box">
+                    <img class="product__img" alt="product">
+                </div>
+                <div class="product__text">
+                    <span class="product__name"></span>
+                    <span class="product__price"></span>
+                </div>
+                <span class="product__add">Add to Cart</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="cart" class="cart"></div>
+
+    <!--Block product-box-->
+    <section class="product-box container page__product-box">
+        <div id="products-inner" class="product-box__inner">
+<!--            <div class="product product-box__product">-->
+<!--                <a class="product__link" href="#">-->
+<!--                    <div class="product__img-box">-->
+<!--                        <img class="product__img" src="img/product1.jpg" alt="product">-->
+<!--                    </div>-->
+<!--                    <div class="product__text">-->
+<!--                        <span class="product__name">Product 1</span>-->
+<!--                        <span class="product__price">$48.00</span>-->
+<!--                    </div>-->
+<!--                    <span class="product__add">Add to Cart</span>-->
+<!--                </a>-->
+<!--            </div>-->
+
+        </div>
+    </section>
+    <!--End block product-box-->
+
+    <script src="task-1.js"></script>
+</body>
+</html>
